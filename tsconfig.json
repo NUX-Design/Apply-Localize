@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ES2019",
+    "lib": ["ES2019"],
+    "module": "None",
+    "strict": true,
+    "skipLibCheck": true,
+    "noEmitOnError": true,
+    "typeRoots": ["./node_modules/@figma"],
+    "outDir": ".",
+    "rootDir": "."
+  },
+  "include": ["code.ts"],
+  "exclude": ["node_modules"]
+}

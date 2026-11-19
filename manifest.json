@@ -1,0 +1,17 @@
+{
+  "name": "Apply Localize",
+  "id": "eef32d29-7530-421a-9f3e-ef4299cfd865",
+  "api": "1.0.0",
+  "main": "code.js",
+  "documentAccess": "dynamic-page",
+  "editorType": [
+    "figma"
+  ],
+  "relaunchButtons": [
+    {
+      "command": "eef32d29-7530-421a-9f3e-ef4299cfd865",
+      "name": "Apply Localize"
+    }
+  ],
+  "ui": "ui.html"
+}
