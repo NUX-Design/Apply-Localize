@@ -2,11 +2,11 @@
 
 ## Project Structure
 
-This repository contains a Figma plugin named **Apply Localize**. `code.ts` is the plugin controller: it scans text layers, finds matching string variables, and applies bindings. `ui.html` contains the plugin panel, styles, and browser-side message handling. `manifest.json` declares the Figma plugin entry point and UI file. The compiled `code.js` is the runtime entry point referenced by the manifest and is committed so the plugin can be imported from a repository checkout. `npm run build` regenerates it. There are no test or asset directories in this checkout.
+This repository contains a Figma plugin named **Apply Localize**. `code.ts` is the plugin controller: it scans text layers, finds matching string variables, and applies bindings. `ui.html` contains the plugin panel, styles, and browser-side message handling. `manifest.json` declares the Figma plugin entry point and UI file. The compiled `code.js` referenced by the manifest is not currently included. There are no test or asset directories in this checkout.
 
 ## Build, Test, and Development
 
-Run `npm install` to install the TypeScript and Figma plugin typings dependencies. Run `npm run build` to compile `code.ts` into `code.js`, then open/import the plugin in Figma using `manifest.json`. `npm run typecheck` checks types without emitting output; `npm run watch` rebuilds during development. Validate changes in Figma by scanning a file with multiple pages, checking candidate selection, and applying one or more string-variable bindings.
+No package manifest, build configuration, or test runner is currently present, so there are no repository-defined build or test commands. To develop, open/import this plugin in Figma using `manifest.json`. Before loading it, compile `code.ts` to the `code.js` entry point expected by the manifest using the project's chosen TypeScript/Figma plugin toolchain. Keep any added commands documented in the relevant package or build configuration. Validate changes in Figma by scanning a file with multiple pages, checking candidate selection, and applying one or more string-variable bindings.
 
 ## Coding Style
 
